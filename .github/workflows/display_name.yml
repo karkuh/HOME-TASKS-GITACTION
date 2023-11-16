@@ -25,11 +25,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: Set up Bash
-        uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-
       - name: Make script executable
         run: chmod +x display_name.sh
 
